@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a6c2f0428b.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/body.css">
+  <link rel="stylesheet" href="./assets/css/weather-search.css">
+  <script src="./app/searchPlace.js" type="module" defer></script>
+</head>
+<body>
+  <main>
+    <div class="search__close__button__container"><i class="fa-solid fa-xmark fa-xl close__button" style="color: #e7e7eb;"></i></div>
+    <div class="search__section">
+      <form class="search__section__container">
+        <span class="search__section__icon"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #616475;"></i></span>
+        <input class="search__section__input" id="search-input" type="text" autocomplete="off" placeholder="search location">
+        <button class="search__section__button" id="search-btn">Search</button>
+      </form>
+    </div>
+    <div class="cities__history">
+      <div class="city__container">
+        <a class="cities__history__city" href="">London</a>
+        <span class="city__container__arrow"><i class="fa-solid fa-angle-right fa-lg" style="color: #616475;"></i></span>
+      </div>
+      <div class="city__container">
+        <a class="cities__history__city" href="">Barcelona</a>
+        <span class="city__container__arrow"><i class="fa-solid fa-angle-right fa-lg" style="color: #616475;"></i></span>
+      </div>
+      <div class="city__container">
+        <a class="cities__history__city" href="">Long Bach</a>
+        <span class="city__container__arrow"><i class="fa-solid fa-angle-right fa-lg" style="color: #616475;"></i></span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+<!--  -->

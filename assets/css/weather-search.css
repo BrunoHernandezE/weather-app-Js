@@ -1,0 +1,85 @@
+main {
+  height: 100vh;
+  background-color: var(--background-weather-container);
+}
+.search__close__button__container {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  padding-right: 18px;
+}
+.search__section {
+  height: 48px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.search__section__container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__section__icon {
+  position: absolute;
+  display: block;
+  left: 1rem;
+
+}
+.search__section__input {
+  background-color: transparent;
+  border: 1px solid var(--font-darkest-color);
+  color: var(--search-location);
+  font-size: 16px;
+  font-weight: 500;
+  height: calc(100% - 2px);
+  padding-left: 60px;
+  max-width: 252px;
+}
+.search__section__input:focus {
+  outline: none;
+}
+.search__section__button {
+  background-color: var(--search-location-button);
+  border: none;
+  color: var(--font-darkest-color);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 86px;
+}
+.cities__history {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+.city__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 351px;
+}
+.cities__history__city {
+  align-items: center;
+  color: var(--font-darkest-color);
+  display: flex;
+  padding-left: 10px;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+.city__container__arrow {
+  padding-right: 10px;
+  display: block;
+} 
+.city__container:hover {
+  border: 1px solid var(--search-location);
+  height: 62px;
+}

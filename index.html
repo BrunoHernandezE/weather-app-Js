@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/body.css">
+  <link rel="stylesheet" href="./assets/css/weather-section.css">
+  <link rel="stylesheet" href="./assets/css/weekly-weather-section.css">
+  <link rel="stylesheet" href="./assets/css/today-hightlights-section.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
+  <script src="https://kit.fontawesome.com/a6c2f0428b.js" crossorigin="anonymous"></script>
+
+  <script src="./app/app.js" type="module" defer></script>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,-25" /> -->
+  <title>Weather App</title>
+</head>
+<body>
+  <main>
+
+    <section class="weather__container">
+      <div class="location__container">
+        <button class="location__container__search" id="search-button">Search for places</button>
+        <button class="location__container__my-location">
+          <i class="fa-solid fa-location-crosshairs fa-lg" style="color: #e7e7eb;"></i>
+        </button>
+      </div>
+      <div class="background__screen__clouds">
+      </div>
+      <div class="weather__image__container">
+        <img class="weather__container__image" id="weather-image" src="./assets/images/Shower.png"></img>
+      </div>
+      <p class="weather__container-degrees"><span id="degrees">13</span><span class="units">°C</span></p>
+      <p class="weather__container__description" id="weather">Some word</p>
+      <div class="weather__container__time">
+        <p class="weather__container__time__day">Today</p> •
+        <p class="weather__container__time__date"><span id="today-day">Fri</span> <span id="today-date">5</span> <span id="today-month">Jun</span></p>
+      </div>
+      <div class="weather__container__location">
+        <i class="fa-sharp fa-solid fa-location-dot" style="color: #88869d;"></i>
+        <!-- <span class="material-symbols-outlined weather__container__location__icon">
+          location_on
+          </span> -->
+        <p class="weather__container__location__city" id="city-name">Mexico</p>
+      </div>
+    </section>
+
+    <section class="weekly__weather__container">
+      <div class="weekly__weather__container__box">
+        <p class="weekly__weather__container__box__day">Tomorrow</p>
+        <img src="./assets/images/Clear.png" class="weekly__weather__container__box__image"></img>
+        <div class="weekly__weather__container__box__min-max__temp">
+          <p class="weekly__weather__container__box__max__temp">16<span class="max__temp__degrees__units">°C</span></p>
+          <p class="weekly__weather__container__box__min__temp">11<span class="min__temp__degrees__units">°C</span></p>
+        </div>
+      </div>
+      <div class="weekly__weather__container__box">
+        <p class="weekly__weather__container__box__day">Tomorrow</p>
+        <img src="./assets/images/Hail.png" class="weekly__weather__container__box__image"></img>
+        <div class="weekly__weather__container__box__min-max__temp">
+          <p class="weekly__weather__container__box__max__temp">16<span class="max__temp__degrees__units">°C</span></p>
+          <p class="weekly__weather__container__box__min__temp">11<span class="min__temp__degrees__units">°C</span></p>
+        </div>
+      </div>
+      <div class="weekly__weather__container__box">
+        <p class="weekly__weather__container__box__day">Tomorrow</p>
+        <img src="./assets/images/HeavyCloud.png" class="weekly__weather__container__box__image"></img>
+        <div class="weekly__weather__container__box__min-max__temp">
+          <p class="weekly__weather__container__box__max__temp">16<span class="max__temp__degrees__units">°C</span></p>
+          <p class="weekly__weather__container__box__min__temp">11<span class="min__temp__degrees__units">°C</span></p>
+        </div>
+      </div>
+      <div class="weekly__weather__container__box">
+        <p class="weekly__weather__container__box__day">Tomorrow</p>
+        <img src="./assets/images/LightCloud.png" class="weekly__weather__container__box__image"></img>
+        <div class="weekly__weather__container__box__min-max__temp">
+          <p class="weekly__weather__container__box__max__temp">16<span class="max__temp__degrees__units">°C</span></p>
+          <p class="weekly__weather__container__box__min__temp">11<span class="min__temp__degrees__units">°C</span></p>
+        </div>
+      </div>
+      <div class="weekly__weather__container__box">
+        <p class="weekly__weather__container__box__day">Tomorrow</p>
+        <img src="./assets/images/Shower.png" class="weekly__weather__container__box__image"></img>
+        <div class="weekly__weather__container__box__min-max__temp">
+          <p class="weekly__weather__container__box__max__temp">16<span class="max__temp__degrees__units">°C</span></p>
+          <p class="weekly__weather__container__box__min__temp">11<span class="min__temp__degrees__units">°C</span></p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="today__hightlights">
+      <h2 class="today__hightlights__title">Today’s Hightlights</h2>
+      <div class="today__hightlights__box">
+        <p class="today__hightlights__box__title">Wind status</p>
+        <p class="today__hightlights__box__number"><span id="wind-speed">7</span><span class="today__hightlights__box__units">mps</span></p>
+        <div class="today__hightlights__box__wsw__container">
+          <div class="today__hightlights__box__near-me__back">
+            <i class="fa-solid fa-location-arrow today__hightlights__box__near-me__icon" style="color: #e7e7eb;"></i>
+          </div>
+          <p class="today__hightlights__box__wsw">WSW</p>
+        </div>
+      </div>
+      <div class="today__hightlights__box">
+        <p class="today__hightlights__box__title">Humidity</p>
+        <p class="today__hightlights__box__number"><span id="humidity">84</span><span class="today__hightlights__box__units">%</span></p>
+        <div class="today__hightlights__box__percentage-bar">
+          <div class="today__hightlights__box__percentage-bar__numbers">
+            <span>0</span>
+            <span>50</span>
+            <span>100</span>
+          </div>
+          <div class="today__hightlights__box__percentage-bar__total">
+            <div class="today__hightlights__box__percentage-bar__mark" id="humidity-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="today__hightlights__box">
+        <p class="today__hightlights__box__title">Visibility</p>
+        <p class="today__hightlights__box__number"><span id="visibility">6,4</span> <span class="today__hightlights__box__units">km</span></p>
+      </div>
+      <div class="today__hightlights__box">
+        <p class="today__hightlights__box__title">Air Pressure</p>
+        <p class="today__hightlights__box__number"><span id="air-pressure">998</span> <span class="today__hightlights__box__units">hpa</span></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__attribution">created by <a href="https://github.com/BrunoHernandezE" target="_blank">Bruno Hernandez</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p>
+  </footer>
+</body>
+</html>

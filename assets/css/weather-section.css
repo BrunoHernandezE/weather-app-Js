@@ -1,0 +1,98 @@
+.weather__container {
+  align-items: center;
+  background-color: var(--background-weather-container);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.location__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin-top: 18px;
+}
+.location__container__my-location {
+  align-items: center;
+  background-color: var(--search-button);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+.location__container__search {
+  background-color: var(--search-button);
+  border: none;
+  box-shadow: 2px 2px 5px black;
+  color: var(--font-darkest-color);
+  height: 40px;
+  width: 160px;
+}
+.location__container__search:hover, .location__container__my-location:hover{
+  cursor: pointer;
+}
+
+.background__screen__clouds {
+  align-items: center;
+  background-image: var(--background-image-url);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 376px;
+  justify-content: center;
+  opacity: .1;
+  position: absolute;
+  margin-top: 60px;
+  width: 100%;
+  z-index: 5;
+}
+.weather__image__container {
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__container__image {
+  height: 150px;
+  width: auto;
+}
+.weather__container-degrees {
+  color: var(--font-darkest-color);
+  font-size: 144px;
+  font-weight: 500;
+  margin-top: -50px;
+}
+.units {
+  color: var(--font-medium-color);
+  font-size: 48px;
+}
+.weather__container__description {
+  color: var(--font-medium-color);
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.weather__container__time {
+  color: var(--font-light-color);
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.weather__container__location {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 6px;
+  align-items: center;
+  color: var(--font-light-color);
+}
+.weather__container__location__city {
+  font-weight: 600;
+}

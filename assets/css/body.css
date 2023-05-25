@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --font: 'Raleway', sans-serif;
+
+  --search-button: #6E707A;
+  --background-weather-container: #1E213A;
+  --background-hightlights: #100E1D;
+  --background-image-url: url("../images/Cloud-background.png");
+
+  --font-darkest-color: #E7E7EB;
+  --font-medium-color: #A09FB1;
+  --font-light-color: #88869D;
+
+  --degrees-units-farenheit: #585676; 
+  --humidity-percentage-bar: #FFEC65;
+  --search-location: #616475;
+  --search-location-button: #3C47E9;
+} 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font);
+  background-color: var(--background-hightlights);
+}

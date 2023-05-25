@@ -1,0 +1,97 @@
+.today__hightlights {
+  background-color: var(--background-hightlights);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 23px;
+}
+.today__hightlights__title {
+  color: var(--font-darkest-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.today__hightlights__box {
+  align-items: center;
+  background-color: var(--background-weather-container);
+  color: var(--font-darkest-color);
+  display: flex;
+  flex-direction: column;
+  height: 204px;
+  justify-content: space-around;
+  width: 100%;
+}
+.today__hightlights__box:nth-child(4), .today__hightlights__box:nth-child(5){
+  height: 160px;
+  justify-content: center;
+}
+.today__hightlights__box__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.today__hightlights__box__number {
+  font-size: 64px;
+  font-weight: 700;
+}
+.today__hightlights__box__units {
+  font-size: 36px;
+  font-weight: 500;
+}
+.today__hightlights__box__wsw__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80px;
+}
+.today__hightlights__box__near-me__back {
+  align-items: center;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  width: 25px;
+}
+.today__hightlights__box__near-me__icon {
+  rotate: 160deg;
+  height: 12.5px;
+  margin-left: 5px;
+  width: 10.5px;
+}
+.today__hightlights__box__wsw {
+  font-size: 14px;
+  font-weight: 500;
+}
+.today__hightlights__box__percentage-bar {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.today__hightlights__box__percentage-bar__numbers {
+  color: var(--font-medium-color);
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.today__hightlights__box__percentage-bar__total {
+  width: 100%;
+  height: 8px;
+  background-color: var(--font-darkest-color);
+  border-radius: 5px;
+}
+
+
+.today__hightlights__box__percentage-bar__mark {
+  background-color: var(--humidity-percentage-bar);
+  border-radius: 5px 0 0 5px;
+  height: 8px;
+  width: 84%;
+}
+.today__hightlights__box__percentage-bar::after {
+  content: "%";
+  color: var(--font-medium-color);
+  margin-top: 7px;
+  text-align: end;
+}
