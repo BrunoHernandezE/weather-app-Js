@@ -2,7 +2,7 @@ import { getWeatherData } from "./getWeatherData.js";
 
 
 
-document.querySelector("#search-button").addEventListener("click", () => window.location.href = "../weather-search.html")
+document.querySelector("#search-button").addEventListener("click", () => window.location.href = "./weather-search.html")
 document.querySelector(".location__container__my-location").addEventListener("click", () => {
   navigator.geolocation.getCurrentPosition( async position => {
     const lat = position.coords.latitude.toFixed(2)
